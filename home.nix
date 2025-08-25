@@ -46,6 +46,7 @@
     go
     eza
     fzf
+    stripe-cli
     nerd-fonts.fira-code
   ];
 
@@ -87,7 +88,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  
+
 
   imports = [
     ./configs/fzf.nix
