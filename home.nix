@@ -46,6 +46,7 @@
     go
     eza
     fzf
+    postgresql_17
     stripe-cli
     nerd-fonts.fira-code
   ];
