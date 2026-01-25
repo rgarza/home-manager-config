@@ -24,7 +24,6 @@ home.file."./.config/nvim/" = {
       lsp-zero-nvim
       trouble-nvim
       nvim-treesitter.withAllGrammars
-      playground
       nvim-web-devicons
       go-nvim
       refactoring-nvim
