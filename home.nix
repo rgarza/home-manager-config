@@ -49,6 +49,8 @@
     fzf
     postgresql_17
     stripe-cli
+    lua5_1
+    luarocks
     nerd-fonts.fira-code
   ];
 

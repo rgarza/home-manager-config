@@ -18,38 +18,21 @@ home.file."./.config/nvim/" = {
 
     vimdiffAlias = true;
     plugins = with pkgs.vimPlugins; [
-      packer-nvim
-      nightfox-nvim
-      plenary-nvim
-      lsp-zero-nvim
-      trouble-nvim
-      nvim-treesitter.withAllGrammars
-      nvim-web-devicons
-      go-nvim
-      refactoring-nvim
-      undotree
-      neorg
-      vim-fugitive
-      nvim-treesitter-context
-      nvim-treesitter-textobjects
-      comment-nvim
-      zen-mode-nvim
-      mason-nvim
-      nvim-lspconfig
-      mason-lspconfig-nvim
-      telescope-nvim
-      nvim-cmp
-      cmp-buffer
-      cmp-path
-      cmp_luasnip
-      cmp-nvim-lsp
-      cmp-nvim-lua
-      luasnip
-      friendly-snippets
-      harpoon2
-      vim-terraform
-      copilot-vim
-      lualine-nvim
+        lazy-nvim
     ];
+    initLua =
+    ''
+     require("lazy").setup({
+        -- disable all update / install features
+        -- this is handled by nix
+        rocks = { enabled = false },
+        pkg = { enabled = false },
+        install = { missing = false },
+        change_detection = { enabled = false },
+        spec = {
+          -- TODO
+        },
+      })
+    '';
   };
 }
