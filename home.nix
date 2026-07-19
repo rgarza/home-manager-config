@@ -27,10 +27,11 @@
     coreutils
     awscli2
     bacon
+    # bootdev
     wget
     nodejs
     caddy
-    ffmpeg-full
+    # ffmpeg-full
     openjdk
     maven
     flyctl

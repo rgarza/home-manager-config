@@ -113,6 +113,7 @@
 
 
 
+     fish_add_path -p -g /Users/rd/go/bin
      fish_add_path -p -g /Users/rd/.nix-profile/bin
      fish_add_path -p -g /nix/var/nix/profiles/default/bin
 
