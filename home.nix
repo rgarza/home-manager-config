@@ -27,7 +27,9 @@
     coreutils
     awscli2
     bacon
+    wrangler
     # bootdev
+    watch
     wget
     nodejs
     caddy
